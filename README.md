@@ -118,6 +118,7 @@
 - [**nvim**](https://github.com/neovim/neovim)，现代化 Vim，插件生态成熟、性能极强，适合写代码、改配置、SSH 远程干活，键盘流天花板
 - [**LazyVim**](https://github.com/LazyVim/LazyVim)，基于 Neovim 的成体系配置框架，预置 LSP / 补全 / 调试 / Git 等全套能力，开箱即用又能逐步深度定制，不想从零配 nvim 的最优解
 - [**DBeaver**](https://dbeaver.io/)，全能数据库客户端，支持 MySQL / PostgreSQL / SQLite / ClickHouse 等，连本地、服务器、SSH 隧道都很顺，查数据、改表结构、看执行计划都很舒服，工程党必备
+- [**虚拟卡**](https://www.bybit.com/cards/?ref=YDGAVPN&source=applet_invite)，注册有这个卡你可以注册 aws 赠送的 100 美金的服务器额度，可以用很久，选澳大利亚地区的通过很快
 
 
 ---
