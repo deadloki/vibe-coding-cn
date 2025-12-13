@@ -10,9 +10,9 @@
 
 <div align="center">
 
-# Vibe Coding 终极指南 V1.2
+# vibe coding 至尊超级终极无敌指南 V114514
 
-**一个通过与 AI 结对编程，将想法变为现实的终极工作流程。**
+**一个通过与 AI 结对编程，将想法变为现实的终极工作站**
 
 ---
 
@@ -29,10 +29,13 @@
   <a href="https://t.me/glue_coding"><img src="https://img.shields.io/badge/chat-telegram-blue?style=for-the-badge&logo=telegram" alt="交流群"></a>
 </p>
 
-[📚 相关文档](#-相关文档) •
-[🚀 入门指南](#-入门指南) •
-[⚙️ 完整设置流程](#️-完整设置流程) •
+[📚 相关文档](#-相关文档)
+[🚀 入门指南](#-入门指南)
+[⚙️ 完整设置流程](#️-完整设置流程)
+[📞 联系方式](#-联系方式)
+[✨ 赞助地址](#-赞助地址)
 [🤝 参与贡献](#-参与贡献)
+
 
 </div>
 
@@ -44,6 +47,68 @@
 
 > **核心理念**: *规划就是一切。* 谨慎让 AI 自主规划，否则你的代码库会变成一团无法管理的乱麻。
 
+## 🧭 道
+
+* **凡是 ai 能做的，就不要人工做**
+* **一切问题问 ai**
+* **上下文是 vibe coding 的第一性要素，垃圾进，垃圾出**
+* **系统性思考，实体，链接，功能/目的，三个维度**
+* **数据与函数即是编程的一切**
+* **输入，处理，输出刻画整个过程**
+* **多问 ai 是什么？，为什么？，怎么做？**
+* **先结构，后代码，一定要规划好框架，不然后面技术债还不完**
+* **奥卡姆剃刀定理，如无必要，勿增代码**
+* **帕累托法则，关注重要的那20%**
+* **逆向思考，先明确你的需求，从需求逆向构建代码**
+* **重复，多试几次，实在不行重新开个窗口，**
+* **专注，极致的专注可以击穿代码，一次只做一件事（神人除外）**
+
+## 🧩 法
+
+* **一句话目标 + 非目标**
+* **正交性，功能不要太重复了，（这个分场景）**
+* **能抄不写，不重复造轮子，先问 ai 有没有合适的仓库，下载下来改**
+* **一定要看官方文档，先把官方文档爬下来喂给 ai**
+* **按职责拆模块**
+* **接口先行，实现后补**
+* **一次只改一个模块**
+* **文档即上下文，不是事后补**
+
+## 🛠️ 术
+
+* 明确写清：**能改什么，不能改什么**
+* Debug 只给：**预期 vs 实际 + 最小复现**
+* 测试可交给 AI，**断言人审**
+* 代码一多就**切会话**
+
+## 📋 器
+
+- [**Claude Opus 4.5**](https://claude.ai/new)，在 Claude Code 中使用 很贵，但是尼区ios订阅要便宜几百人民币，快+效果好，顶中顶中顶，有 cli 和 ide 插件
+- [**gpt-5.1-codex.1-codex (xhigh)**](https://chatgpt.com/codex/)，在 Codex CLI 中使用，顶中顶，除了慢其他没得挑，大项目复杂逻辑唯一解，买chatgpt会员就能用，有 cli 和 ide 插件
+- [**Droid**](https://factory.ai/news/terminal-bench)，这个里面的 Claude Opus 4.5比 Claude Code 还强，顶，有 cli
+- [**Kiro**](https://kiro.dev/)，这个里面的 Claude Opus 4.5 现在免费，就是cli有点拉，看不到正在运行的情况有客户端和 cli
+- [**gemini**](https://geminicli.com/)，目前免费用，干脏活，用 Claude Code 或者 codex 写好的脚本，拿他来执行可以，整理文档和找思路就它了有客户端和 cli
+- [**antigravity**](https://antigravity.google/)，谷歌的，可以免费用 Claude Opus 4.5 和 gemini 3.0 pro 大善人
+- [**aistudio**](https://aistudio.google.com/prompts/new_chat)，谷歌家的，免费用 gemini 3.0 pro 和 Nano Banana
+- [**gemini-enterprise**](https://cloud.google.com/gemini-enterprise)，谷歌企业版，现在能免费用 Nano Banana pro
+- [**augment**](https://app.augmentcode.com/)，它的上下文引擎和提示词优化按钮真的神中神中神，小白就用它就行了，点击按钮自动帮你写好提示词，懒人必备
+- [**cursor**](https://cursor.com/)，已经占领用户心智高地，人尽皆知
+- [**Windsurf**](https://windsurf.com/)，新用户有免费额度
+- [**GitHub Copilot**](https://github.com/features/copilot)，没用过
+- [**kimik2**](https://www.kimi.com/)，国产，还行，干脏活写简单任务用，之前2r一个key，一周1024次调用挺爽
+- [**GLM**](https://bigmodel.cn/)，国产，听说很强，听说和 Claude Sonnet 4 差不多？
+- [**Qwen**](https://qwenlm.github.io/qwen-code-docs/zh/cli/)，国产阿里的，cli有免费额度
+- [**提示词库，直接复制粘贴即可使用**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1)
+- [**其他编程工具的系统提示词学习库**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
+- [**Skills制作器（ ai 你下好之后让 ai 用这个仓库按照你的需求生成 Skills 即可）**](https://github.com/yusufkaraaslan/Skill_Seekers)
+- [**元提示词，生成提示词的提示词**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220)
+- [**通用项目架构模板；这个就是框架，复制给ai一键搭好目录结构**](./documents/通用项目架构模板.md) - 提供了多种项目类型的标准目录结构、核心设计原则、最佳实践建议及技术选型参考。
+- [**augment提示词优化器**](https://app.augmentcode.com/)，这个提示词优化是真的好用，强烈强烈强烈强烈强烈强烈强烈强烈强烈强烈强烈强烈推荐
+- [**思维导图神器，让ai生成项目架构的.mmd图复制到这个里面就能可视化查看啦，，提示词在下面的“系统架构可视化生成Mermaid”里面**](https://www.mermaidchart.com/)
+- [**notebooklm，资料ai解读和技术文档放这里可以，听音频看思维导图和 Nano Banana 生成的图片什么的**](https://notebooklm.google.com/)
+- [**zread，ai读仓库神器，复制github仓库链接进去就能分析，减少用轮子的工作量了**](https://zread.ai/)
+- [**元技能 Skills 就是生成 Skills 的 Skills**](./skills/claude-skills/SKILL.md)
+
 ---
 
 ## 📚 相关文档/资源
@@ -52,7 +117,10 @@
 - [**我的频道**](https://t.me/tradecat_ai_channel)
 - [**小登论道：我的学习经验**](./documents/小登论道.md)
 - [**编程书籍推荐**](./documents/编程书籍推荐.md)
-- [**skill生成器，把任何资料转agent的skill（技能）**](https://github.com/yusufkaraaslan/Skill_Seekers)
+- [**元提示词，生成提示词的提示词**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220)
+- [**元技能 Skills 就是生成 Skills 的 Skills**](./skills/claude-skills/SKILL.md)
+- [**skills技能仓库复制即用**](./skills)
+- [**Skills生成器，把任何资料转agent的Skills（技能）**](https://github.com/yusufkaraaslan/Skill_Seekers)
 - [**google表格提示词数据库，我系统性收集和制作的几百个适用于各个场景的用户提示词和系统提示词在线表格**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1)
 - [**系统提示词收集仓库**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
 - [**prompts-library 提示词库xlsx与md文件夹互转工具与使用说明，有几百个适用于各个领域的提示词与元提示词**](./prompts-library/)
@@ -66,6 +134,7 @@
 - [**CONTRIBUTING.md**](./CONTRIBUTING.md)
 - [**CODE_OF_CONDUCT.md**](./CODE_OF_CONDUCT.md)
 - [**系统提示词构建原则.md**](./documents/系统提示词构建原则.md) - 深入探讨构建高效、可靠AI系统提示词的核心原则、沟通互动、任务执行、编码规范与安全防护等全方位指南。
+- [**系统架构可视化生成Mermaid**](./prompts/coding_prompts/系统架构可视化生成Mermaid.md) - 根据项目直接生成 .mmd 导入思维导图网站直观看架构图，序列图等等
 - [**开发经验.md**](./documents/开发经验.md) - 包含变量命名、文件结构、编码规范、系统架构原则、微服务、Redis和消息队列等开发经验与项目规范的详细整理。
 - [**vibe-coding-经验收集.md**](./documents/vibe-coding-经验收集.md) - AI开发最佳实践与系统提示词优化技巧的经验收集。
 - [**通用项目架构模板.md**](./documents/通用项目架构模板.md) - 提供了多种项目类型的标准目录结构、核心设计原则、最佳实践建议及技术选型参考。
@@ -146,6 +215,12 @@
 │       ├── ASCII图生成.md         # ASCII 艺术图生成提示词。
 │       ├── 数据管道.md            # 数据管道处理提示词。
 │       ├── ... (其他用户提示词)
+│
+├── skills/                      # 集中存放所有类型的 skills 技能。
+│       ├── claude-skills        # 生成 SKILL 的元 SKILL
+│       │   ├── SKILL.md 
+│       │   ├── ... (其他)
+│       ├── ... (其他 skill)
 │
 └── backups/                     # 项目备份脚本。
     ├── 一键备份.sh                # 一键执行备份的 Shell 脚本。
@@ -488,11 +563,39 @@ gantt
 
 ---
 
-## 🤝 参与贡献
+## 📞 联系方式
 
-我们热烈欢迎各种形式的贡献！如果您对本项目有任何想法或建议，请随时开启一个 [Issue](https://github.com/tukuaiai/vibe-coding-cn/issues) 或提交一个 [Pull Request](https://github.com/tukuaiai/vibe-coding-cn/pulls)。
+推特：https://x.com/123olp
 
-在您开始之前，请花点时间阅读我们的 [**贡献指南 (CONTRIBUTING.md)**](CONTRIBUTING.md) 和 [**行为准则 (CODE_OF_CONDUCT.md)**](CODE_OF_CONDUCT.md)。
+telegram：https://t.me/desci0
+
+telegram交流群：https://t.me/glue_coding
+
+telegram频道：https://t.me/tradecat_ai_channel
+
+邮箱（不一定能及时看到）：tukuai.ai@gmail.com
+
+---
+
+## ✨ 赞助地址
+
+救救孩子！！！钱包被ai们榨干了，求让孩子蹭蹭会员求求求求求求求求求了（可以tg或者x联系我）🙏🙏🙏
+
+**Tron (TRC20)**: `TQtBXCSTwLFHjBqTS4rNUp7ufiGx51BRey`
+
+**Solana**: `HjYhozVf9AQmfv7yv79xSNs6uaEU5oUk2USasYQfUYau`
+
+**Ethereum (ERC20)**: `0xa396923a71ee7D9480b346a17dDeEb2c0C287BBC`
+
+**BNB Smart Chain (BEP20)**: `0xa396923a71ee7D9480b346a17dDeEb2c0C287BBC`
+
+**Bitcoin**: `bc1plslluj3zq3snpnnczplu7ywf37h89dyudqua04pz4txwh8z5z5vsre7nlm`
+
+**Sui**: `0xb720c98a48c77f2d49d375932b2867e793029e6337f1562522640e4f84203d2e`
+
+**币安uid支付**: `572155580`
+
+---
 
 ### ✨ 贡献者们
 
@@ -502,6 +605,14 @@ gantt
   <img src="https://contrib.rocks/image?repo=tukuaiai/vibe-coding-cn" />
   <img src="https://contrib.rocks/image?repo=EnzeD/vibe-coding" />
 </a>
+
+---
+
+## 🤝 参与贡献
+
+我们热烈欢迎各种形式的贡献！如果您对本项目有任何想法或建议，请随时开启一个 [Issue](https://github.com/tukuaiai/vibe-coding-cn/issues) 或提交一个 [Pull Request](https://github.com/tukuaiai/vibe-coding-cn/pulls)。
+
+在您开始之前，请花点时间阅读我们的 [**贡献指南 (CONTRIBUTING.md)**](CONTRIBUTING.md) 和 [**行为准则 (CODE_OF_CONDUCT.md)**](CODE_OF_CONDUCT.md)。
 
 ---
 
@@ -527,17 +638,6 @@ gantt
 
 ---
 
-## ✨ 赞助地址
-
-您的支持是我们持续改进项目的动力！
-
--   **Tron (TRC20)**: `TQtBXCSTwLFHjBqTS4rNUp7ufiGx51BRey`
--   **Solana**: `HjYhozVf9AQmfv7yv79xSNs6uaEU5oUk2USasYQfUYau`
--   **Ethereum (ERC20)**: `0xa396923a71ee7D9480b346a17dDeEb2c0C287BBC`
--   **BNB Smart Chain (BEP20)**: `0xa396923a71ee7D9480b346a17dDeEb2c0C287BBC`
--   **Bitcoin**: `bc1plslluj3zq3snpnnczplu7ywf37h89dyudqua04pz4txwh8z5z5vsre7nlm`
--   **Sui**: `0xb720c98a48c77f2d49d375932b2867e793029e6337f1562522640e4f84203d2e`
-
 **Made with ❤️ and a lot of ☕ by [tukuaiai](https://github.com/tukuaiai),[Nicolas Zullo](https://x.com/NicolasZu)and [123olp](https://x.com/123olp)**
 
-[⬆ 回到顶部](#vibe-coding-终极指南-v12)
+[⬆ 回到顶部](#vibe-coding-至尊超级终极无敌指南-V114514)
