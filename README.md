@@ -617,6 +617,13 @@ telegram频道：https://t.me/tradecat_ai_channel
   <img src="https://contrib.rocks/image?repo=EnzeD/vibe-coding" />
 </a>
 
+<p>特别鸣谢以下成员的宝贵贡献 (排名不分先后):<br/>
+<a href="https://x.com/shao__meng">@shao__meng</a> | 
+<a href="https://x.com/0XBard_thomas">@0XBard_thomas</a> | 
+<a href="https://x.com/Pluvio9yte">@Pluvio9yte</a> | 
+<a href="https://x.com/xDinoDeer">@xDinoDeer</a>
+</p>
+
 ---
 
 ## 🤝 参与贡献
