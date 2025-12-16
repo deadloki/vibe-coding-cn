@@ -2,8 +2,8 @@
 
 ## Project Structure & Module Organization
 - 根目录：`README.md` 给出全貌，`Makefile` 封装日常命令，`CONTRIBUTING.md` 说明贡献流程，`LICENSE` 载明协议。保持根目录扁平，避免巨石文件。
-- 文档库：`documents/` 汇总流程、架构与实践（如 `代码组织.md`、`通用项目架构模板.md`、`开发经验.md`），是理解方法论与协作规则的首选入口。新增流程文档时优先放此处并在 README 链接。
-- 提示词资产：`prompts/` 按角色拆分（system / assistant / coding / user），`libs/external/prompts-library/` 提供 Excel ↔ Markdown 互转工具与脚本目录，便于批量维护提示词，适合作为“单一真实来源”。
+- 文档库：`i18n/zh/documents/` 汇总流程、架构与实践（如 `i18n/zh/documents/Templates and Resources/代码组织.md`、`i18n/zh/documents/Templates and Resources/通用项目架构模板.md`、`i18n/zh/documents/Methodology and Principles/开发经验.md`），是理解方法论与协作规则的首选入口。新增流程文档时优先放此处并在 README 链接。
+- 提示词资产：`i18n/zh/prompts/` 按角色拆分（system / assistant / coding / user），`libs/external/prompts-library/` 提供 Excel ↔ Markdown 互转工具与脚本目录，便于批量维护提示词，适合作为“单一真实来源”。
 - 代码与集成：`libs/` 预留核心实现骨架，`common/`、`database/`、`external/` 分别对应通用模型、存储适配与外部依赖登记；新增模块需保持分层边界与单一职责，避免跨层调用。
 - 备份：`backups/` 内含 `一键备份.sh` 与 `快速备份.py`，用于本地快照或同步，请先在隔离目录试跑，确认输出路径与权限。
 
@@ -11,13 +11,13 @@
 - `make help`：列出所有 Make 目标，是新人快速上手的入口。
 - `make lint`：使用 `markdownlint-cli` 校验全仓库 Markdown，一旦新增文档请先跑通（需本地 Node/npm 环境，可用 `npm install -g markdownlint-cli` 安装）。
 - `make build` / `make test` / `make clean`：目前为占位，落地具体实现后务必更新脚本和说明；建议在 `Makefile` 旁补充注释并保持幂等，避免修改全局状态。
-- 提示词转换：进入 `prompts/prompts-library/` 后执行 `python main.py` 按交互提示进行转换，运行前请确认虚拟环境、依赖与输出目录，并在完成后检查生成 Markdown 是否符合 lint 规则。
+- 提示词转换：进入 `i18n/zh/prompts/prompts-library/` 后执行 `python main.py` 按交互提示进行转换，运行前请确认虚拟环境、依赖与输出目录，并在完成后检查生成 Markdown 是否符合 lint 规则。
 
 ## Coding Style & Naming Conventions
 - 文字层：文档、注释、日志使用中文；代码符号（函数 / 变量 / 模块）统一英文且语义直白，避免晦涩缩写。
 - 缩进与排版：全仓保持空格缩进（2 或 4 空格任选其一但不得混用）；Markdown 列表、代码块与表格对齐清晰，行宽控制在 120 列内。Git diff 可读性优先。
 - 设计品味：优先消除分支与重复；函数力求单一职责且短小；命名遵循小写加中划线或下划线，不使用空格与特殊字符；跨模块接口保持稳定签名。
-- 依赖管理：新增工具或库时记录安装方式、最小版本与来源，必要时在 `documents/工具集.md` 或 README 中补充，并说明为何需要它（性能、兼容、功能）。
+- 依赖管理：新增工具或库时记录安装方式、最小版本与来源，必要时在 `i18n/zh/documents/Templates and Resources/工具集.md` 或 README 中补充，并说明为何需要它（性能、兼容、功能）。
 
 ## Testing Guidelines
 - 当前无实测用例；引入代码时请至少提供最小可复现测试。推荐 Python 使用 `pytest`，文件命名 `test_*.py`，夹具精简可读，遵循 red-green-refactor 循环。
@@ -34,7 +34,7 @@
 - 外部依赖来源记录在 `libs/external/` 目录下，增减依赖时同步维护，保持可追溯；引入第三方脚本需标明许可证与来源。
 
 ## Architecture Overview & Workflow
-- 工作流倡导「规划 → 上下文固定 → 分步实现 → 自测 → 复盘」，对应资产分别存放在 `documents/`、`prompts/`、`libs/` 与备份脚本中。保持单向数据流和清晰责任边界可以避免后期维护成本激增。
+- 工作流倡导「规划 → 上下文固定 → 分步实现 → 自测 → 复盘」，对应资产分别存放在 `i18n/zh/documents/`、`i18n/zh/i18n/zh/prompts/`、`libs/` 与备份脚本中。保持单向数据流和清晰责任边界可以避免后期维护成本激增。
 - 设计决策与目录结构更新后，请同步修订本文件与相关文档，确保团队共享同一真相源，减少口头约定与隐式规则。
 
 ---
@@ -70,11 +70,11 @@ bash backups/一键备份.sh
 ## Architecture & Structure
 
 ### Core Directories
-- **`prompts/`**: The core asset. A massive, well-organized library of prompts.
-  - `coding_prompts/`, `system_prompts/`, `user_prompts/`
-- **`skills/`**: A modular library of skills for the AI, providing domain-specific knowledge for various tools like `ccxt`, `postgresql`, `telegram-dev`, 
+- **`i18n/zh/prompts/`**: The core asset. A massive, well-organized library of prompts.
+  - `coding_i18n/zh/prompts/`, `system_i18n/zh/prompts/`, `user_i18n/zh/prompts/`
+- **`i18n/zh/skills/`**: A modular library of skills for the AI, providing domain-specific knowledge for various tools like `ccxt`, `postgresql`, `telegram-dev`, 
 etc.
-- **`documents/`**: The project's knowledge base, containing methodology, principles, and guides.
+- **`i18n/zh/documents/`**: The project's knowledge base, containing methodology, principles, and guides.
 - **`libs/external/prompts-library/`**: A Python-based tool for converting prompts between Excel and Markdown formats.
 - **`backups/`**: Scripts for project backups.
 - **`libs/`**: Skeleton for shared Python library code.
@@ -118,24 +118,24 @@ When modifying this repository:
 
 ## 主要功能与工作流程 (Key Features & Workflow)
 
-1.  **AI 提示词库 (`prompts/`):**
+1.  **AI 提示词库 (`i18n/zh/prompts/`):**
     *   一个极其庞大和精细分类的提示词集合，是项目的核心资产。
-    *   `coding_prompts/`: 专注于编程和代码生成的提示词。
-    *   `system_prompts/`: 用于设定 AI 行为和思维框架的系统级提示词。
-    *   `user_prompts/`: 用户自定义或常用的提示词。
+    *   `coding_i18n/zh/prompts/`: 专注于编程和代码生成的提示词。
+    *   `system_i18n/zh/prompts/`: 用于设定 AI 行为和思维框架的系统级提示词。
+    *   `user_i18n/zh/prompts/`: 用户自定义或常用的提示词。
 
 2.  **提示词库管理工具 (`libs/external/prompts-library/`):**
     *   提供 Python 工具 (`main.py`)，用于在 Excel 工作簿 (`prompt_excel/`) 和 Markdown 文档 (`prompt_docs/`) 之间进行提示词的相互转换。
     *   支持交互式和非交互式操作。
 
-3.  **技能库 (`skills/`):**
+3.  **技能库 (`i18n/zh/skills/`):**
     *   一个模块化的技能集合，为 AI 提供了特定工具和领域的知识。
     *   每个技能（如 `ccxt`, `postgresql`, `telegram-dev`）都包含独立的 `SKILL.md` 描述, 参考资料和脚本。
 
 4.  **项目备份工具 (`backups/`):**
     *   `快速备份.py` 脚本能根据 `.gitignore` 规则智能地打包项目文件为 `.tar.gz` 格式。
 
-5.  **知识库与文档 (`documents/`):**
+5.  **知识库与文档 (`i18n/zh/documents/`):**
     *   包含代码组织、开发经验、系统提示词构建原则、项目架构模板等各类文档。
 
 6.  **外部工具与个人配置 (`libs/external/`):**
@@ -155,7 +155,7 @@ When modifying this repository:
 ├── Makefile                     # 项目自动化脚本 (lint, backup 等)。
 ├── README.md                    # 项目主文档，包含项目概览、使用指南等。
 │
-├── documents/                   # 存放各类说明文档、经验总结和配置。
+├── i18n/zh/documents/           # 存放各类说明文档、经验总结和配置。
 │   └── ...                      # 更多文档内容。
 │
 ├── libs/                        # 核心库代码。
@@ -174,12 +174,12 @@ When modifying this repository:
 │       ├── my-nvim/             # 个人 Neovim 配置。
 │       └── XHS-image-to-PDF-conversion/ # 小红书图片转 PDF 工具。
 │
-├── prompts/                     # 核心资产：AI 提示词库。
-│   ├── coding_prompts/          # 编程与代码生成相关提示词。
-│   ├── system_prompts/          # AI 系统级提示词。
-│   └── user_prompts/            # 用户自定义提示词。
+├── i18n/zh/prompts/                     # 核心资产：AI 提示词库。
+│   ├── coding_i18n/zh/prompts/          # 编程与代码生成相关提示词。
+│   ├── system_i18n/zh/prompts/          # AI 系统级提示词。
+│   └── user_i18n/zh/prompts/            # 用户自定义提示词。
 │
-└── skills/                      # 模块化技能库。
+└── i18n/zh/skills/                      # 模块化技能库。
     ├── ccxt/                    # CCXT 加密货币交易库技能。
     ├── claude-code-guide/       # Claude Code 使用指南技能。
     ├── postgresql/              # PostgreSQL 数据库技能。
