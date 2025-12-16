@@ -19,6 +19,7 @@
 <!--
   徽章区域 (BADGES)
 -->
+<!-- 项目状态徽章 -->
 <p>
   <a href="https://github.com/tukuaiai/vibe-coding-cn/actions"><img src="https://img.shields.io/github/actions/workflow/status/tukuaiai/vibe-coding-cn/main.yml?style=for-the-badge" alt="构建状态"></a>
   <a href="https://github.com/tukuaiai/vibe-coding-cn/releases"><img src="https://img.shields.io/github/v/release/tukuaiai/vibe-coding-cn?style=for-the-badge" alt="最新版本"></a>
@@ -27,7 +28,10 @@
   <a href="https://github.com/tukuaiai/vibe-coding-cn"><img src="https://img.shields.io/github/languages/code-size/tukuaiai/vibe-coding-cn?style=for-the-badge" alt="代码大小"></a>
   <a href="https://github.com/tukuaiai/vibe-coding-cn/graphs/contributors"><img src="https://img.shields.io/github/contributors/tukuaiai/vibe-coding-cn?style=for-the-badge" alt="贡献者"></a>
   <a href="https://t.me/glue_coding"><img src="https://img.shields.io/badge/chat-telegram-blue?style=for-the-badge&logo=telegram" alt="交流群"></a>
-  <!-- 多语言入口 -->
+</p>
+
+<!-- 多语言入口 -->
+<p>
   <a href="./i18n/zh/README.md"><img src="https://img.shields.io/badge/lang-zh-red?style=for-the-badge" alt="简体中文"></a>
   <a href="./i18n/en/README.md"><img src="https://img.shields.io/badge/lang-en-lightgrey?style=for-the-badge" alt="English"></a>
   <a href="./i18n/he/"><img src="https://img.shields.io/badge/lang-he-navy?style=for-the-badge" alt="Hebrew"></a>
@@ -55,6 +59,15 @@
   <a href="./i18n/uk/"><img src="https://img.shields.io/badge/lang-uk-cornflowerblue?style=for-the-badge" alt="Українська"></a>
   <a href="./i18n/ur/"><img src="https://img.shields.io/badge/lang-ur-darkslateblue?style=for-the-badge" alt="Urdu"></a>
   <a href="./i18n/vi/"><img src="https://img.shields.io/badge/lang-vi-darkgreen?style=for-the-badge" alt="Tiếng Việt"></a>
+</p>
+
+<!-- 资源直达 -->
+<p>
+  <a href="./i18n/zh/prompts/"><img src="https://img.shields.io/badge/prompts-精选-purple?style=for-the-badge" alt="提示词精选"></a>
+  <a href="./i18n/zh/skills/"><img src="https://img.shields.io/badge/skills-技能库-forestgreen?style=for-the-badge" alt="技能库"></a>
+  <a href="./libs/external/prompts-library/prompt_docs/"><img src="https://img.shields.io/badge/prompts-全量文档-orange?style=for-the-badge" alt="Prompt 全量文档"></a>
+  <a href="https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1"><img src="https://img.shields.io/badge/prompts-在线库-blue?style=for-the-badge" alt="在线提示词数据库"></a>
+  <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"><img src="https://img.shields.io/badge/prompts-第三方系统库-slateblue?style=for-the-badge" alt="第三方系统提示词仓库"></a>
 </p>
 
 [📚 相关文档](#-相关文档与资源)

@@ -1,7 +1,7 @@
-
 import os
 import re
 import json
+from pathlib import Path
 
 # Load PATH_TRANSLATION_MAP from JSON
 with open('path_translation_map.json', 'r', encoding='utf-8') as f:
@@ -16,7 +16,6 @@ def translate_path_component(component):
         cleaned_component = re.sub(r"^\(\d+,\d+\)_#?_", "", component).replace("_", " ")
         # Try to match cleaned component against known translations
         for k, v in PATH_TRANSLATION_MAP.items():
-            # Use a more flexible matching
             if cleaned_component in k or k in cleaned_component:
                 return v.replace(" ", "_") # Return simplified and underscored version
 
@@ -120,8 +119,8 @@ def translate_path_component(component):
     return re.sub(r"[^a-zA-Z0-9]+", "_", component).strip("_")
 
 
-def get_translated_path(chinese_path):
-    parts = chinese_path.split(os.sep)
+def get_translated_path(chinese_path_str): # Accept string
+    parts = Path(chinese_path_str).parts # Use pathlib to split path
     translated_parts = []
     
     # Handle the 'i18n/zh' to 'i18n/en' conversion at the root
@@ -137,26 +136,32 @@ def get_translated_path(chinese_path):
         translated_base = translate_path_component(base)
         translated_parts.append(translated_base + ext)
         
-    return os.path.join(*translated_parts)
+    return Path(*translated_parts) # Reconstruct path using pathlib
 
 # Load chinese_files from JSON
 with open('chinese_files_list.json', 'r', encoding='utf-8') as f:
-    chinese_files = json.load(f)
+    chinese_files_str_list = json.load(f)
 
-for chinese_file_path in chinese_files:
+for chinese_file_path_str in chinese_files_str_list:
+    chinese_file_path = Path(chinese_file_path_str) # Convert string to Path object
+
     # Construct the corresponding English directory path
-    english_file_path = get_translated_path(chinese_file_path)
-    english_dir = os.path.dirname(english_file_path)
+    english_file_path = get_translated_path(chinese_file_path_str) # Pass string to get_translated_path for component splitting
+    english_dir = english_file_path.parent # Get parent directory from Path object
     
     # Create the English directory if it doesn't exist
     os.makedirs(english_dir, exist_ok=True)
     
     # Read the content of the Chinese file
     try:
-        with open(chinese_file_path, 'r', encoding='utf-8') as f:
+        # Use pathlib.Path.open() which is generally more robust
+        with chinese_file_path.open('r', encoding='utf-8') as f:
             chinese_content = f.read()
+    except FileNotFoundError:
+        print(f"Error: File not found - {chinese_file_path_str}. Skipping.")
+        continue
     except Exception as e:
-        print(f"Error reading {chinese_file_path}: {e}")
+        print(f"Error reading {chinese_file_path_str}: {e}. Skipping.")
         continue
     
     # Simulate content translation (actual LLM translation will be done manually later)
@@ -166,8 +171,8 @@ for chinese_file_path in chinese_files:
     
     # Write the translated content to the English file path
     try:
-        with open(english_file_path, 'w', encoding='utf-8') as f:
+        with english_file_path.open('w', encoding='utf-8') as f:
             f.write(translated_content)
-        print(f"Processed: {chinese_file_path} -> {english_file_path}")
+        print(f"Processed: {chinese_file_path_str} -> {english_file_path}")
     except Exception as e:
-        print(f"Error writing to {english_file_path}: {e}")
+        print(f"Error writing to {english_file_path}: {e}. Skipping.")
